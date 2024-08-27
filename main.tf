@@ -11,8 +11,6 @@ terraform {
   }
 }
 
-provider "kind" {}
-
 resource "kind_cluster" "this" {
   name = "kind-cluster"
   config = <<-EOF
